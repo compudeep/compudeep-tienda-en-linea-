@@ -1,0 +1,251 @@
+div.img1 {
+	width:10%;
+	height:1%;
+	background:fff;
+	font-size:10px;
+	position:relative;
+	top:-20;
+	bottom:0px;
+	right:36px;
+	left:33%;
+}
+
+
+
+div .img2 {
+	width:1%;
+	height:1%;
+	background:fff;
+	font-size:10px;
+	position:relative;
+	top:-25;
+	bottom:0px;
+	right:36px;
+    left:49%;
+}
+	
+div .img3{
+	width:1%;
+    height:1%;
+    max-width:90px;
+    min-width: 40px;
+	height:1%;
+	background:fff;
+	font-size:12%;
+	position:relative;
+	top:-30;
+     left:65%;
+}
+
+
+
+
+
+
+
+.galeria {
+	padding:2%;
+	display:flex;
+	flex-wrap:wrap;
+	justifi-content:center;
+}
+
+.galeria__item {
+	width:80%;
+	cursor:pointer;
+}
+	
+	@media (min-width:480px) {
+	.galeria__item{
+		width: 48%;
+		margin: 5px;
+	  }
+	}
+	
+	
+	@media (min-width:768px) {
+	.galeria__item{
+		width: 33%;	
+	 	
+	  }
+	}	
+		
+		
+	@media (min-width:1024px) {
+	.galeria__item{
+		width: 15%;
+        
+		
+		
+	}
+}	
+	
+
+
+	.modal {
+	position:fixed;
+	width:100%;
+	height:100vh;
+	background: rgba(0,0,0,0.7);
+	top:0;
+	left:0;
+	display:flex;
+	justifi-content:center;
+	aling-items:center;
+	text-decoration:none;	
+	}
+	
+	
+	.modal__img  {
+	width:80%;
+	height:25%;
+	position:relative;
+	top:200px;
+	right:100px;
+    left:30px;
+	
+	
+}
+		
+	.modal__boton{
+	width:10%;
+	height:3.5%;
+	color:#00000;
+	font-weight: bold;
+	font-size:150%;
+	font-family:monospace;
+	line-height:33px;
+	text-align:center;
+	background:#F3F1F1;
+	border-radius:50%;
+	cursor:pointer;
+	position:absolute;
+	right:33px;
+	top:150px;
+	
+	
+}
+
+
+@media (min-width:1200px){
+    .modal__img {
+    width:60%;
+	height:60%;
+	position:relative;
+	top:200px;
+	right:0px;
+    left:200px;
+    }
+    
+    .modal__boton{
+      width:3%;
+	height:4%;
+      position:absolute;
+	right:300px;
+	top:100px;  
+    }
+}
+
+
+
+#ima{
+	
+  
+	display:block;
+	max-width:100%;
+    margin:9px;
+	position:relative;
+    list-style: none;
+}
+
+figure{
+	margin:10;
+	display:inline-block;
+	
+	position:relative;
+}
+
+figcaption{
+
+	background:#F0F0F0;
+	position:absolute;
+	left:-90px;
+	bottom:-20px;
+	width:100%;
+	padding:0;
+    text-align: center;
+    margin: 20px;
+	margin-left: 90;
+	
+}
+
+
+
+
+.galeria__item2 {
+    background:#49494949;
+      width:230;
+    margin: -12;
+    padding:1em;
+    font-size:11;
+    height:370px;
+	
+}
+
+#mop{
+   cursor:pointer; 
+}
+
+@media screen and (max-width: 1039px){
+    
+    div.img1 {
+        display: none;
+    }
+    div.img2 {
+        display: none;
+    }
+    div.img3 {
+        display: none;
+    }
+    
+    
+    
+}
+
+
+.lupa {
+    position:relative;
+display: block;
+    padding:1;
+    margin: 1px;
+    top: 82%;
+    
+    right: 4%;
+    width: 3%;
+   
+    
+}
+
+.lupa img{
+   width:100%;
+    cursor: pointer;
+}
+
+@media (max-width:906px){
+    .lupa{
+        width: 30px;
+        top: 2px;
+        right: 40px;
+            
+    }
+}
+
+
+
+
+
+ 
+	 
+
+
+ 

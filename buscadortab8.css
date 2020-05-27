@@ -1,0 +1,179 @@
+.contenedor {
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+}    
+
+.logo{
+    text-align: center;
+    margin-bottom: 40px;
+    
+}
+
+ form{
+	width:100%;
+	display:flex;
+   justify-content: center;
+   margin-bottom:20px;
+}
+
+ .barra-busqueda{
+  width: 70%;
+    height: 40px;
+    line-height: 40px;
+    background: #fff;
+    padding: 0 20px;
+    border-radius: 100px;
+    border: solid 1;
+    text-align: center;
+    font-size: 16px;
+    
+}
+
+.categorias {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+
+ .categorias a{
+   
+    margin: 10px 2px;
+    font-weight: 700;
+    text-decoration: none;
+    width: 20%;
+    padding: 5px 0;
+    margin-bottom: 5px;
+    background: #d3d3d3;
+    text-align: center;
+    color: #0168a6;
+    font-size:11;
+    }
+
+@media (max-width:350px){
+    
+    .categorias a{
+        font-size: 8px;
+    }
+}
+
+
+
+.categorias a.activo{
+    color: #000;
+}
+
+
+.grid {
+     position: relative;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 0.5s linear 1s;
+    
+}
+
+.grid.imagenes-cargadas{
+    opacity: 1;
+}
+
+.grid .item{
+    position: absolute;
+    display: block;
+    padding: 0;
+    margin: 10px;
+    width: calc(33.333333% -20px);
+   
+    
+}
+
+.grid .item-contenido{
+     position: relative;
+	
+	
+
+	
+	
+}
+
+.grid .item img{
+   
+    width:40%;
+    cursor: pointer;
+    vertical-align: top;
+    
+    
+	
+	
+	
+    
+}
+
+
+.overlay{
+	position:fixed;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+background: rgba(0,0,0,0.3);
+width:100%;
+height:100vh;
+display:none;
+align-items:center;	
+justify-content:center;
+flex-direction:column;
+
+}
+
+.overlay.activo{
+	display:flex;
+}
+
+.overlay img {
+	max-width:100%;
+	
+}
+
+.overlay .descripcion{
+	display:block;
+	background:#fff;
+	padding:20px;
+	text-align:center;
+	margin-top:5px;
+	border-radius:10px;
+	max-width:50%;
+}
+.contenedor-img{
+	position:relative;
+}
+
+.overlay #btn-cerrar-popup{
+	background:#fff;
+	color:#000;
+	border:none;
+	cursor:pointer;
+	position:absolute;
+	right:-60px;
+	top:-20px;
+    
+    width:30px;
+	height:30px;
+	color:#00000;
+	font-weight: bold;
+	font-size:25px;
+	text-align:center;
+	border-radius:50%;
+		
+	}
+
+@media screen and (max-wid: 700px) {
+	.grid .item{
+		width:calc(50% -20)
+	}
+	
+	header .barra-busqueda {
+		width:100%;
+	}
+}
+
