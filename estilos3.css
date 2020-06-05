@@ -855,9 +855,9 @@ height: 50;
 
 .minusculas{
     position:relative;
-    width: 1000px;
-    height: 29px;
-    left: 350px;
+    width: 1000%;
+    height: 4%;
+    left: 20%;
     font-size: 12px;
     color: darkgray;
     text-align: center;
@@ -867,8 +867,15 @@ height: 50;
 
 @media (max-width:700px){
     .minusculas{
-     left: 9px;
+     left: 15%;
         font-size:10px;
+    }
+}
+
+@media (max-width:530px){
+    .minusculas{
+     left: 1%;
+        font-size:7px;
     }
 }
 
